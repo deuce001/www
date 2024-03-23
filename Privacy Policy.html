@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .agree-checkbox {
+      margin-top: 20px;
+    }
+    .loading-message {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+
+  <h2>Information Collection:</h2>
+  <p>We may collect personal information from clients, including:</p>
+  <ul>
+    <li>Name</li>
+    <li>Email address</li>
+    <li>Phone number</li>
+    <li>Payment details</li>
+  </ul>
+  <p><strong>Purpose:</strong> Solely for providing services and communication on [www/privacypolicy.com].</p>
+
+  <h2>Use of Information:</h2>
+  <p>Personal information is used for:</p>
+  <ul>
+    <li>Fulfilling service requests</li>
+    <li>Communicating with clients</li>
+    <li>Processing payments</li>
+  </ul>
+  <p>Aggregated data may be used for internal analysis.</p>
+
+  <!-- Repeat the same structure for other sections -->
+
+  <h2>Contact Information:</h2>
+  <p>For questions or concerns:</p>
+  <ul>
+    <li><a href="mailto:obrientheog@gmail.com">obrientheog@gmail.com</a></li>
+    <li>0742736053</li>
+  </ul>
+
+  <h2>Acceptance:</h2>
+  <label for="agree-checkbox">
+    <input type="checkbox" id="agree-checkbox" name="agree-checkbox" class="agree-checkbox" required>
+    I have read and agree to the Privacy Policy.
+  </label>
+  <div class="loading-message" id="loading-message">Loading... Window will close in 3 seconds.</div>
+
+  <script>
+    document.getElementById('agree-checkbox').addEventListener('change', function() {
+      if (this.checked) {
+        document.getElementById('loading-message').style.display = 'block';
+        setTimeout(function() {
+          window.close();
+        }, 3000); // 3000 milliseconds = 3 seconds
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
